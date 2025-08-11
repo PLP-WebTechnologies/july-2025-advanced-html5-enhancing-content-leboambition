@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Page with Registration Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Community</h1>
+        <p>Before registering, please review some key points about our community.</p>
+    </header>
+
+    <!-- Lists Section -->
+    <section>
+        <h2>Community Guidelines</h2>
+        <ul>
+            <li>Be respectful to all members.</li>
+            <li>Share useful and constructive information.</li>
+            <li>No spam or self-promotion.</li>
+        </ul>
+
+        <h3>Benefits of Joining</h3>
+        <ol>
+            <li>Access to exclusive resources.</li>
+            <li>Opportunities to network with experts.</li>
+            <li>Participation in community events.</li>
+        </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Upcoming Community Events</h2>
+        <table border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2025-08-15</td>
+                    <td>Web Development Workshop</td>
+                    <td>Online</td>
+                </tr>
+                <tr>
+                    <td>2025-08-30</td>
+                    <td>Networking Meetup</td>
+                    <td>Lagos, Nigeria</td>
+                </tr>
+                <tr>
+                    <td>2025-09-01</td>
+                    <td>Hackaton</td>
+                    <td>Online</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Welcome Video</h2>
+        <video controls width="320">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2>Intro Audio</h2>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter first name" required minlength="2">
+                <br>
+                <br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter last name" required minlength="2">
+                <br>
+                <br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br>
+                <br>
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <br>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" pattern="^\+?\d{10,15}$" required>
+                <br>
+                <br>
+                <label for="address">Home Address:</label>
+                <textarea id="address" name="address" placeholder="Enter address" rows="3" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required minlength="5" maxlength="15">
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="6">
+                <br>
+                <br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Information</legend>
+                
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country...</option>
+                    <option value="ng">Nigeria</option>
+                    <option value="sa">South Africa</option>
+                    <option value="ke">Kenya</option>
+                </select>
+                
+                <p>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms and Conditions</a>.</label>
+                </p>
+            </fieldset>
+
+            <button type="submit">Register</button>
+            <button type="reset">Clear Form</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
